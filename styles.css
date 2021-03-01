@@ -34,12 +34,22 @@ header{
 .nav{
   width:0px;
   background-color:white;
-
+  height:100%;
   right:0px;
   transition: .5s width;
   z-index:1;
   position:absolute;
-  overflow:hidden;
+  overflow: hidden;
+  height:100%;
+  margin-top:-40px;
+  right:0px;
+  top:40px;
+  position:absolute;
+  display:flex;
+  justify-content:flex-start;
+  align-items: center;
+  
+  
 }
 .visible-nav{
   width:200px;
