@@ -36,7 +36,7 @@ header{
   background-color:white;
 
   right:0px;
-  transition: .5s width;
+
   z-index:1;
   position:absolute;
   overflow:hidden;
