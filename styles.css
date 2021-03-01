@@ -30,6 +30,15 @@ header{
   z-index:2
 }
 
+.close-icon{
+  height:30px;
+  width:30px;
+  display:none;
+  position:absolute;
+  align-self: flex-start;
+  margin-top:10px;
+  margin-left:10px;
+}
 
 .nav{
   width:0px;
