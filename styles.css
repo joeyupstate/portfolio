@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan&display=swap");
 
 body {
   background-color: #009fe8;
@@ -94,18 +94,20 @@ header {
   justify-content: flex-start;
   align-items: center;
   z-index: 3;
-
-  height: 700px;
+   height: 600px;
   filter: none;
+
+
 }
 .name-title-blur {
   text-align: center;
   margin-top: 110px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   z-index: 3;
+  
 
   filter: blur(4px);
 }
@@ -137,6 +139,44 @@ p {
   border-radius: 5%;
   font-weight: bold;
   background-color: #d38585;
+}
+
+
+
+
+
+/* project seciton-------------------------------------*/
+.projects{
+  border:1px solid black;
+  margin-top:55px;
+  width:100%;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height:1000px;
+}
+.projects h2{
+  color:white;
+  margin-top:0px;
+  text-align: center;
+
+}
+
+.projects p{
+  color: #acd385;
+  font-weight: bold;
+  width:80%;
+}
+
+.project-photos{
+  height:200px;
+  width:90%;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 8px 6px -6px #777;
+
+
 }
 /*  laptop screen */
 
