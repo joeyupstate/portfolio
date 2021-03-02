@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;500&display=swap");
-/*#d38585; redish color */
 
 body {
   background-color: #009fe8;
@@ -26,6 +25,7 @@ header {
   margin-right: 10px;
   position: relative;
   z-index: 2;
+  display: block;
 }
 
 .close-icon {
@@ -78,6 +78,7 @@ header {
 
 .nav ul li {
   margin-top: 40px;
+  display: block;
 }
 
 .nav ul li:hover {
@@ -90,10 +91,11 @@ header {
   margin-top: 110px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   z-index: 3;
 
+  height: 700px;
   filter: none;
 }
 .name-title-blur {
@@ -138,21 +140,79 @@ p {
 }
 /*  laptop screen */
 
+@media screen and (min-width: 1200px) {
+  .hamburger-icon {
+    height: 40px;
+    width: 40px;
+    margin-top: 5px;
+    margin-right: 10px;
+    position: relative;
+    z-index: 2;
+    display: none;
+  }
 
+  .close-icon {
+    height: 30px;
+    width: 30px;
+    display: none;
+    position: absolute;
+    align-self: flex-start;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
 
+  .nav {
+    width: 400px;
+    height: 100%;
+    right: 0px;
+    transition: 0.5s width;
+    z-index: 1;
+    position: absolute;
+    overflow: visible;
+    height: 10%;
+    margin-top: 0px;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #009fe8;
+    background-image: url(assets/45-degree-fabric--dark--1920x1080.png);
+  }
 
+  .visible-nav {
+    width: 200px;
+    background-color: white;
+    height: 100%;
+    margin-top: -40px;
+    right: 0px;
+    top: 40px;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 0.5s width;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
+  .nav ul li {
+    list-style: none;
+    color: white;
+    font-size: 16px;
+    display: inline;
+    margin: 10px;
+  }
+  .name-title {
+    text-align: center;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    height: 300px;
+    filter: none;
+  }
+}
 
 /* Desktop Screen */
-/*#d38585;*/
