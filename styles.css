@@ -155,7 +155,7 @@ p {
 
 /* project seciton-------------------------------------*/
 .projects{
-  border:1px solid black;
+  
   margin-top:55px;
   width:100%;
   display:flex;
@@ -177,6 +177,13 @@ p {
   width:80%;
 }
 
+.project-container{
+
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .project-photos{
   height:200px;
   width:90%;
@@ -184,7 +191,16 @@ p {
   -moz-box-shadow: 0 10px 6px -6px #777;
   box-shadow: 0 8px 6px -6px #777;
 
-
+}
+.icon{
+  height:30px;
+  width:30px;
+  margin:10px;
+}
+.icon-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 /*  laptop screen */
 
