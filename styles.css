@@ -4,7 +4,6 @@ html {
   height: 100%;
   margin: 0;
 
-
   background-color: #009fe8;
   background-image: url(assets/45-degree-fabric--dark--1920x1080.png);
 }
@@ -16,7 +15,6 @@ body {
   width: 100%;
   margin: 0;
   width: auto !important;
-
 }
 header {
   display: flex;
@@ -135,10 +133,10 @@ p {
   width: 90%;
 }
 
-#contact-button {
+#view-work-button {
   height: 50px;
   margin-top: 30px;
-  width: 120px;
+  width: 150px;
   border: 5px double rgb(255, 255, 255);
   display: flex;
   justify-content: center;
@@ -146,7 +144,19 @@ p {
   align-self: center;
   border-radius: 5%;
   font-weight: bold;
-  background-color: #d38585;
+  background-color: #d15b5b;
+  padding: 5px;
+}
+#view-work-button:hover {
+  background-color: #d34141;
+  transition: 200ms linear all;
+}
+.arrow-icon {
+  height: 18px;
+  width: 18px;
+  margin-left: 5px;
+  transform: none;
+  transition: 200ms linear all;
 }
 
 /* project seciton-------------------------------------*/
