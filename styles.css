@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan&display=swap");
 
+html {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden !important;
 
-html{
-height: 100%;
-margin: 0;
-overflow-x: hidden !important; 
-background-color: #009fe8;
-background-image: url(assets/45-degree-fabric--dark--1920x1080.png);
+  background-color: #009fe8;
+  background-image: url(assets/45-degree-fabric--dark--1920x1080.png);
 }
 body {
   background-color: #009fe8;
@@ -15,8 +15,8 @@ body {
   color: white;
   width: 100%;
   margin: 0;
-  width: auto!important;
-   overflow-x: hidden!important
+  width: auto !important;
+  overflow-x: hidden !important;
 }
 header {
   display: flex;
@@ -104,10 +104,8 @@ header {
   justify-content: flex-start;
   align-items: center;
   z-index: 3;
-   height: 600px;
+  height: 600px;
   filter: none;
-
-
 }
 .name-title-blur {
   text-align: center;
@@ -117,7 +115,6 @@ header {
   justify-content: flex-start;
   align-items: center;
   z-index: 3;
-  
 
   filter: blur(4px);
 }
@@ -135,6 +132,7 @@ h2 {
 p {
   color: white;
   font-weight: 100;
+  width: 90%;
 }
 
 #contact-button {
@@ -151,58 +149,87 @@ p {
   background-color: #d38585;
 }
 
-
-
-
-
 /* project seciton-------------------------------------*/
-.projects{
-  
-  margin-top:55px;
-  width:100%;
-  display:flex;
+.projects {
+  margin-top: 55px;
+  width: 100%;
+  display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  height:1000px;
+  height: 1000px;
 }
-.projects h2{
-  color:white;
-  margin-top:0px;
+.projects h2 {
+  color: white;
+  margin-top: 0px;
   text-align: center;
-
+  text-decoration: underline 5px #d38585;
 }
 
-.projects p{
+.projects p {
   color: #acd385;
   font-weight: bold;
-  width:80%;
+  width: 80%;
 }
 
-.project-container{
-
-  display:flex;
+.project-container {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-bottom: 5px solid white;
 }
-.project-photos{
-  height:200px;
-  width:90%;
+
+.project-container h3 {
+  font-weight: bold;
+
+  margin-top: 30px;
+}
+
+.project-container p {
+  text-align: justify;
+  color: white;
+}
+
+.project-photos {
+  height: 225px;
+  width: 90%;
   -webkit-box-shadow: 0 10px 6px -6px #777;
   -moz-box-shadow: 0 10px 6px -6px #777;
   box-shadow: 0 8px 6px -6px #777;
-
 }
-.icon{
-  height:30px;
-  width:30px;
-  margin:10px;
+.icon {
+  height: 30px;
+  width: 30px;
+  margin: 10px;
 }
-.icon-container{
-  display:flex;
+.icon:hover {
+  height: 32px;
+  width: 32px;
+}
+.icon-container {
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.tech-container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-bubbles {
+  height: 35px;
+  width: 80px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(167, 167, 167);
+  margin: 10px;
+  font-size: 12px;
 }
 /*  laptop screen */
 
