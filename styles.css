@@ -3,7 +3,7 @@
 html {
   height: 100%;
   margin: 0;
-  overflow-x: hidden !important;
+
 
   background-color: #009fe8;
   background-image: url(assets/45-degree-fabric--dark--1920x1080.png);
@@ -16,7 +16,7 @@ body {
   width: 100%;
   margin: 0;
   width: auto !important;
-  overflow-x: hidden !important;
+
 }
 header {
   display: flex;
