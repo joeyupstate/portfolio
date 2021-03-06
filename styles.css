@@ -3,7 +3,7 @@
 html {
   height: 100%;
   margin: 0;
-
+  scroll-behavior: smooth;
   background-color: #009fe8;
   background-image: url(assets/45-degree-fabric--dark--1920x1080.png);
 }
@@ -136,7 +136,7 @@ p {
 #view-work-button {
   height: 50px;
   margin-top: 30px;
-  width: 280px;
+  width: 180px;
   border: 5px double rgb(255, 255, 255);
   display: flex;
   justify-content: center;
@@ -146,6 +146,10 @@ p {
   font-weight: bold;
   background-color: #d15b5b;
   padding: 5px;
+}
+#view-work-button a {
+  text-decoration: none;
+  color: white;
 }
 #view-work-button:hover {
   background-color: #d34141;
@@ -160,7 +164,7 @@ p {
 }
 
 /* project seciton-------------------------------------*/
-.projects {
+#projects {
   margin-top: 55px;
   width: 100%;
   display: flex;
@@ -168,14 +172,16 @@ p {
   align-items: center;
   flex-direction: column;
 }
-.projects h2 {
+
+#projects h2 {
   color: white;
   margin-top: 0px;
   text-align: center;
   text-decoration: underline 5px #d38585;
+  margin-top: 30px;
 }
 
-.projects p {
+#projects p {
   color: #acd385;
   font-weight: bold;
   width: 80%;
@@ -222,6 +228,11 @@ p {
   align-items: center;
 }
 
+h4 {
+  color: black;
+  font-weight: 700;
+}
+
 .tech-container {
   width: 90%;
   display: flex;
@@ -230,15 +241,19 @@ p {
 }
 
 .tech-bubbles {
-  height: 35px;
+  height: 30px;
   width: 80px;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(167, 167, 167);
+  background-color: rgb(202, 201, 201);
   margin: 10px;
   font-size: 12px;
+  color: black;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 7px 6px -6px #777;
 }
 /*  laptop screen */
 
