@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Spartan&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap");
 
 html {
   height: 100%;
@@ -118,6 +118,7 @@ header {
 }
 h1 {
   font-size: 50px;
+  font-weight: 400;
 }
 h2 {
   color: #acd385;
@@ -150,6 +151,7 @@ p {
 #view-work-button a {
   text-decoration: none;
   color: white;
+  font-weight: 400;
 }
 #view-work-button:hover {
   background-color: #d34141;
@@ -179,12 +181,14 @@ p {
   text-align: center;
   text-decoration: underline 5px #d38585;
   margin-top: 30px;
+  font-weight: 400;
 }
 
 #projects p {
-  color: #acd385;
+  color: white;
   font-weight: bold;
   width: 80%;
+  font-weight: 400;
 }
 
 .project-container {
@@ -196,7 +200,7 @@ p {
 }
 
 .project-container h3 {
-  font-weight: bold;
+  font-weight: 700;
 
   margin-top: 30px;
 }
@@ -329,6 +333,9 @@ h4 {
     z-index: 3;
     height: 300px;
     filter: none;
+  }
+  .project-container {
+    flex-direction: row;
   }
 }
 
