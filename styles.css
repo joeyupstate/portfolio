@@ -221,6 +221,8 @@ p {
   justify-content: center;
   align-items: center;
   border-bottom: 5px solid white;
+
+  display: flex;
 }
 
 .desktop-display {
@@ -229,7 +231,12 @@ p {
   justify-content: center;
   align-items: center;
 }
-
+.ph4techicon {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 .project-container h3 {
   font-weight: 700;
 
@@ -276,6 +283,7 @@ h4 {
   align-items: center;
   border-left: 1px solid black;
   border-right: 1px solid black;
+  flex-wrap: wrap;
 }
 
 .tech-bubbles {
@@ -377,6 +385,10 @@ h4 {
   .project-container {
     border-bottom: none;
     margin-top: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .project-photos {
@@ -384,7 +396,12 @@ h4 {
     width: 45%;
     margin: 10px;
   }
-
+  .ph4techicon {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
   .desktop-display {
     display: flex;
     flex-direction: row;
@@ -394,7 +411,7 @@ h4 {
 
   .desktop-display p {
     width: 45%;
-    font-size: 30px;
+    font-size: 26px;
     margin: 15px;
   }
 }
