@@ -6,7 +6,8 @@ const nameTitle = document.querySelector(".name-title")
 const viewWorkButton = document.querySelector("#view-work-button")
 const arrowIcon= document.querySelector(".arrow-icon")
 const arrowIconRotated= document.querySelector(".arrow-icon-rotated")
-
+const projectSection =document.querySelector("#projects");
+const menuList =document.querySelectorAll("li")
 
 hamburgerButton.addEventListener("click", function(){
 
@@ -28,4 +29,13 @@ viewWorkButton.addEventListener("mouseenter", function(){
 
 viewWorkButton.addEventListener("mouseleave", function(){
     arrowIcon.style.transform="none"
+})
+
+
+menuList[0].addEventListener("click",function(){
+  
+projectSection.scrollIntoView();
+nav.classList.toggle("visible-nav")
+nameTitle.classList.toggle("name-title-blur")
+
 })
