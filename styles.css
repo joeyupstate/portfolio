@@ -213,6 +213,8 @@ p {
   font-weight: bold;
   width: 80%;
   font-weight: 400;
+  background-color: transparent;
+  padding: 10px;
 }
 
 .project-container {
@@ -221,6 +223,8 @@ p {
   justify-content: center;
   align-items: center;
   border-bottom: 5px solid white;
+
+  display: flex;
 }
 
 .desktop-display {
@@ -229,7 +233,12 @@ p {
   justify-content: center;
   align-items: center;
 }
-
+.ph4techicon {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 .project-container h3 {
   font-weight: 700;
 
@@ -251,8 +260,10 @@ p {
 .icon {
   height: 30px;
   width: 30px;
-  margin: 10px;
+
+  margin-left: 10px;
 }
+
 .icon:hover {
   height: 32px;
   width: 32px;
@@ -261,6 +272,26 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: none;
+  width: 90%;
+}
+.icon-buttons {
+  width: 120px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 10px;
+  color: black;
+}
+
+#icon-button-link {
+  font-size: 14px;
+  color: black !important;
+  background-color: transparent !important;
 }
 
 h4 {
@@ -274,8 +305,10 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-left: 1px solid black;
+
+  flex-wrap: wrap;
   border-right: 1px solid black;
+  border-left: 1px solid black;
 }
 
 .tech-bubbles {
@@ -377,6 +410,19 @@ h4 {
   .project-container {
     border-bottom: none;
     margin-top: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #projects p {
+    color: #009fe8;
+    font-weight: bold;
+    width: 80%;
+    font-weight: 400;
+    background-color: white;
+    padding: 10px;
   }
 
   .project-photos {
@@ -384,9 +430,12 @@ h4 {
     width: 45%;
     margin: 10px;
   }
-<<<<<<< HEAD
-=======
-
+  .ph4techicon {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
   .desktop-display {
     display: flex;
     flex-direction: row;
@@ -396,22 +445,27 @@ h4 {
 
   .desktop-display p {
     width: 45%;
-    font-size: 30px;
+    font-size: 26px;
     margin: 15px;
   }
-}
->>>>>>> 34984c3cc1b3ee482d19b68a234d072868ef4921
-
-  .desktop-display {
+  .icon-container {
+    border-bottom: none;
+  }
+  .icon-buttons {
+    width: 150px;
+    height: 50px;
+    border: 5px solid black;
+    border-radius: 10px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    margin: 10px;
+    color: black;
   }
 
-  .desktop-display p {
-    width: 45%;
-    font-size: 30px;
-    margin: 15px;
+  #icon-button-link {
+    font-size: 14px;
+    color: black !important;
+    background-color: transparent !important;
   }
 }
