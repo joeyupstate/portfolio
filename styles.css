@@ -1,9 +1,33 @@
-@import url("https://fonts.googleapis.com/css2?family=Spartan&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap");
+
+@import "compass/css3";
+
+* {
+  @include box-sizing(border-box);
+}
+
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s;
+}
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
+
+@keyframes come-in {
+  to {
+    transform: translateY(0);
+  }
+}
 
 html {
   height: 100%;
   margin: 0;
-
+  scroll-behavior: smooth;
   background-color: #009fe8;
   background-image: url(assets/45-degree-fabric--dark--1920x1080.png);
 }
@@ -118,6 +142,7 @@ header {
 }
 h1 {
   font-size: 50px;
+  font-weight: 400;
 }
 h2 {
   color: #acd385;
@@ -136,7 +161,7 @@ p {
 #view-work-button {
   height: 50px;
   margin-top: 30px;
-  width: 150px;
+  width: 180px;
   border: 5px double rgb(255, 255, 255);
   display: flex;
   justify-content: center;
@@ -146,6 +171,11 @@ p {
   font-weight: bold;
   background-color: #d15b5b;
   padding: 5px;
+}
+#view-work-button a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
 }
 #view-work-button:hover {
   background-color: #d34141;
@@ -160,26 +190,29 @@ p {
 }
 
 /* project seciton-------------------------------------*/
-.projects {
+#projects {
   margin-top: 55px;
   width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  height: 1000px;
 }
-.projects h2 {
+
+#projects h2 {
   color: white;
   margin-top: 0px;
   text-align: center;
   text-decoration: underline 5px #d38585;
+  margin-top: 30px;
+  font-weight: 400;
 }
 
-.projects p {
-  color: #acd385;
+#projects p {
+  color: white;
   font-weight: bold;
   width: 80%;
+  font-weight: 400;
 }
 
 .project-container {
@@ -190,8 +223,15 @@ p {
   border-bottom: 5px solid white;
 }
 
+.desktop-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .project-container h3 {
-  font-weight: bold;
+  font-weight: 700;
 
   margin-top: 30px;
 }
@@ -204,9 +244,9 @@ p {
 .project-photos {
   height: 225px;
   width: 90%;
-  -webkit-box-shadow: 0 10px 6px -6px #777;
-  -moz-box-shadow: 0 10px 6px -6px #777;
-  box-shadow: 0 8px 6px -6px #777;
+  -webkit-box-shadow: 0 12px 6px -6px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 12px 6px -6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 12px 6px -6px rgba(0, 0, 0, 0.4);
 }
 .icon {
   height: 30px;
@@ -223,23 +263,35 @@ p {
   align-items: center;
 }
 
+h4 {
+  color: black;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
 .tech-container {
   width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 
 .tech-bubbles {
-  height: 35px;
+  height: 30px;
   width: 80px;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(167, 167, 167);
+  background-color: rgb(202, 201, 201);
   margin: 10px;
   font-size: 12px;
+  color: black;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 7px 6px -6px #777;
 }
 /*  laptop screen */
 
@@ -316,6 +368,33 @@ p {
     height: 300px;
     filter: none;
   }
-}
+  #projects {
+    margin-top: 250px;
+  }
+  #projects h2 {
+    font-size: 40px;
+  }
+  .project-container {
+    border-bottom: none;
+    margin-top: 50px;
+  }
 
-/* Desktop Screen */
+  .project-photos {
+    height: 400px;
+    width: 45%;
+    margin: 10px;
+  }
+
+  .desktop-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .desktop-display p {
+    width: 45%;
+    font-size: 30px;
+    margin: 15px;
+  }
+}
