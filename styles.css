@@ -211,7 +211,7 @@ p {
 #projects p {
   color: white;
   font-weight: bold;
-  width: 80%;
+  width: 90%;
   font-weight: 400;
   background-color: transparent;
   padding: 10px;
@@ -223,7 +223,7 @@ p {
   justify-content: center;
   align-items: center;
   border-bottom: 5px solid white;
-
+margin-top:100px;
   display: flex;
 }
 
@@ -278,6 +278,7 @@ z-index: 1;
   align-items: center;
   border-bottom: none;
   width: 90%;
+  
 }
 .icon-buttons {
   width: 120px;
@@ -311,8 +312,9 @@ h4 {
   align-items: center;
 
   flex-wrap: wrap;
-  border-right: 1px solid black;
-  border-left: 1px solid black;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+
 }
 
 .tech-bubbles {
@@ -410,6 +412,7 @@ h4 {
   }
   #projects h2 {
     font-size: 40px;
+    
   }
   .project-container {
     border-bottom: none;
@@ -418,6 +421,8 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
+    
+
   }
 
   #projects p {
@@ -444,6 +449,8 @@ h4 {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+ 
+    width:40%;
   }
   .desktop-display {
     display: flex;
