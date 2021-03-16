@@ -118,7 +118,7 @@ header {
   cursor: pointer;
 }
 
-.name-title {
+#name-title {
   text-align: center;
   margin-top: 110px;
   display: flex;
@@ -203,7 +203,7 @@ p {
   color: white;
   margin-top: 0px;
   text-align: center;
-  text-decoration: underline 5px #d38585;
+  text-decoration: underline 5px #d38585 !important;
   margin-top: 30px;
   font-weight: 400;
 }
@@ -222,7 +222,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: 5px solid white;
+  border-bottom:none;
 
   display: flex;
 }
@@ -328,6 +328,24 @@ h4 {
   -moz-box-shadow: 0 10px 6px -6px #777;
   box-shadow: 0 7px 6px -6px #777;
 }
+
+/* constact me section */
+
+#contact{
+  width:100%;
+  margin-top:170px;
+  text-align: center;
+}
+#contact h2{
+  color:white;
+  text-decoration: underline 5px #d38585 !important;
+  font-weight: 400;
+}
+
+#email-icon{
+  height:70px;
+  width:100px;
+}
 /*  laptop screen */
 
 @media screen and (min-width: 1200px) {
@@ -392,7 +410,7 @@ h4 {
     display: inline;
     margin: 10px;
   }
-  .name-title {
+  #name-title {
     text-align: center;
     margin-top: 200px;
     display: flex;
@@ -502,7 +520,7 @@ h4 {
   .project-container {
     border-bottom: none;
     margin-top: 150px;
-
+    border:1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
