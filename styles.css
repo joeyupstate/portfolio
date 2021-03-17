@@ -118,7 +118,7 @@ header {
   cursor: pointer;
 }
 
-.name-title {
+#name-title {
   text-align: center;
   margin-top: 110px;
   display: flex;
@@ -203,7 +203,8 @@ p {
   color: white;
   margin-top: 0px;
   text-align: center;
-  text-decoration: underline 5px #d38585;
+
+  border-bottom: 5px solid #d38585;
   margin-top: 30px;
   font-weight: 400;
 }
@@ -222,9 +223,13 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: 5px solid white;
-margin-top:100px;
+  border-bottom: none;
+  border-top: 2px solid #2e95c5;
   display: flex;
+  margin-top: 50px;
+}
+.project-container:first-child {
+  border-top: none;
 }
 
 .desktop-display {
@@ -248,8 +253,6 @@ margin-top:100px;
 .project-container p {
   text-align: justify;
   color: white;
-
-  
 }
 
 .project-photos {
@@ -258,7 +261,7 @@ margin-top:100px;
   -webkit-box-shadow: 0 12px 6px -6px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0 12px 6px -6px rgba(0, 0, 0, 0.4);
   box-shadow: 0 12px 6px -6px rgba(0, 0, 0, 0.4);
-z-index: 1;
+  z-index: 1;
 }
 
 .icon {
@@ -278,7 +281,9 @@ z-index: 1;
   align-items: center;
   border-bottom: none;
   width: 90%;
-  
+}
+.icon-container a {
+  text-decoration: none;
 }
 .icon-buttons {
   width: 120px;
@@ -291,6 +296,9 @@ z-index: 1;
   flex-direction: row;
   margin: 10px;
   color: black;
+}
+.white {
+  background-color: white;
 }
 
 #icon-button-link {
@@ -312,9 +320,8 @@ h4 {
   align-items: center;
 
   flex-wrap: wrap;
-  border-right: 1px solid white;
-  border-left: 1px solid white;
-
+  border-right: 1px solid black;
+  border-left: 1px solid black;
 }
 
 .tech-bubbles {
@@ -332,6 +339,52 @@ h4 {
   -moz-box-shadow: 0 10px 6px -6px #777;
   box-shadow: 0 7px 6px -6px #777;
 }
+
+/* constact me section */
+
+#contact {
+  width: 100%;
+  margin-top: 170px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#contact h2 {
+  color: white;
+  text-decoration: underline 5px #d38585 !important;
+  font-weight: 400;
+}
+
+#email-icon {
+  height: 80px;
+  width: 100px;
+}
+
+#contact-icon-container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-icon {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
 /*  laptop screen */
 
 @media screen and (min-width: 1200px) {
@@ -396,7 +449,7 @@ h4 {
     display: inline;
     margin: 10px;
   }
-  .name-title {
+  #name-title {
     text-align: center;
     margin-top: 200px;
     display: flex;
@@ -407,12 +460,13 @@ h4 {
     height: 300px;
     filter: none;
   }
+
+  /* Project section ----------------------------------*/
   #projects {
     margin-top: 250px;
   }
   #projects h2 {
     font-size: 40px;
-    
   }
   .project-container {
     border-bottom: none;
@@ -421,8 +475,6 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-
   }
 
   #projects p {
@@ -430,7 +482,7 @@ h4 {
     font-weight: bold;
     width: 80%;
     font-weight: 400;
-   
+
     padding: 10px;
   }
 
@@ -440,8 +492,8 @@ h4 {
     margin: 10px;
   }
 
-  .project-phone-photos{
-    height:400px;
+  .project-phone-photos {
+    height: 400px;
     width: 200px;
   }
   .ph4techicon {
@@ -449,8 +501,8 @@ h4 {
     justify-content: center;
     flex-direction: column;
     align-items: center;
- 
-    width:40%;
+
+    width: 40%;
   }
   .desktop-display {
     display: flex;
@@ -484,15 +536,103 @@ h4 {
     color: black !important;
     background-color: transparent !important;
   }
-  
-.tech-container {
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-  flex-wrap: wrap;
-  border-right: none;
-  border-left:none;
+  .tech-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+    border-right: none;
+    border-left: none;
+  }
 }
+
+@media screen and (min-width: 1800px) {
+  /* Project Section ------------------------*/
+
+  #projects {
+    margin-top: 400px;
+  }
+  #projects h2 {
+    font-size: 40px;
+  }
+  .project-container {
+    border-bottom: none;
+    margin-top: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #projects p {
+    color: white;
+    font-weight: bold;
+    width: 80%;
+    font-weight: 400;
+
+    padding: 10px;
+  }
+
+  .project-photos {
+    height: 500px;
+    width: 45%;
+    margin: 10px;
+  }
+
+  .project-phone-photos {
+    height: 400px;
+    width: 200px;
+  }
+  .ph4techicon {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .desktop-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .desktop-display p {
+    width: 45%;
+    font-size: 36px;
+    margin: 15px;
+  }
+  .icon-container {
+    border-bottom: none;
+  }
+  .icon-buttons {
+    width: 150px;
+    height: 50px;
+    border: 5px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    color: black;
+  }
+
+  #icon-button-link {
+    font-size: 14px;
+    color: black !important;
+    background-color: transparent !important;
+  }
+
+  .tech-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+    border-right: none;
+    border-left: none;
+  }
 }
