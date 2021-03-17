@@ -223,8 +223,13 @@ p {
   justify-content: center;
   align-items: center;
   border-bottom:none;
-
+  border-top:2px solid #2e95c5;
   display: flex;
+  margin-top:50px;
+}
+.project-container:first-child{
+  border-top:none;
+ 
 }
 
 .desktop-display {
@@ -277,6 +282,7 @@ p {
   border-bottom: none;
   width: 90%;
 }
+
 .icon-buttons {
   width: 120px;
   height: 40px;
@@ -339,6 +345,8 @@ h4 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+ 
 }
 #contact h2{
   color:white;
@@ -549,7 +557,7 @@ footer{
   .project-container {
     border-bottom: none;
     margin-top: 150px;
-    border:1px solid black;
+   
     display: flex;
     justify-content: center;
     align-items: center;
