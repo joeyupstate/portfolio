@@ -8,6 +8,25 @@ const arrowIcon= document.querySelector(".arrow-icon")
 const arrowIconRotated= document.querySelector(".arrow-icon-rotated")
 const projectSection =document.querySelector("#projects");
 const menuList =document.querySelectorAll("li")
+const tacoPizzaContainer = document.getElementById("taco-pizza-container");
+const linkButton = document.querySelectorAll(".icon-buttons")[5];
+
+
+linkButton.addEventListener("click", function(){
+    tacoPizzaContainer.style.display="flex"
+})
+
+
+
+
+
+
+
+
+
+
+
+
 
 hamburgerButton.addEventListener("click", function(){
 
