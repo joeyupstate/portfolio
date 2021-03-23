@@ -256,7 +256,7 @@ p {
 }
 
 .project-photos {
-  height: 225px;
+  height: auto;
   width: 90%;
   -webkit-box-shadow: 0 12px 6px -6px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0 12px 6px -6px rgba(0, 0, 0, 0.4);
@@ -504,7 +504,7 @@ footer {
   }
 
   .project-photos {
-    height: 400px;
+    height: auto;
     width: 45%;
     margin: 10px;
   }
