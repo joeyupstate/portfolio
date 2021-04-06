@@ -63,7 +63,7 @@ header {
 .close-icon {
   height: 30px;
   width: 30px;
-  display: none;
+ 
   position: absolute;
   align-self: flex-start;
   margin-top: 10px;
@@ -119,9 +119,10 @@ header {
 }
 #resume-link{
   text-decoration: none;
+  color: #0b84ba;
 }
 
-#name-title {
+.name-title {
   text-align: center;
   margin-top: 110px;
   display: flex;
