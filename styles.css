@@ -117,6 +117,9 @@ header {
   color: #d38585;
   cursor: pointer;
 }
+#resume-link{
+  text-decoration: none;
+}
 
 #name-title {
   text-align: center;

@@ -10,7 +10,7 @@ const projectSection =document.querySelector("#projects");
 const menuList =document.querySelectorAll("li")
 const tacoPizzaContainer = document.getElementById("taco-pizza-container");
 const linkButton = document.querySelectorAll(".icon-buttons")[5];
-
+const contactSection = document.getElementById("contact")
 
 linkButton.addEventListener("click", function(){
     tacoPizzaContainer.style.display="flex"
@@ -58,3 +58,12 @@ nav.classList.toggle("visible-nav")
 nameTitle.classList.toggle("name-title-blur")
 
 })
+
+menuList[2].addEventListener("click",function(){
+  
+    contactSection.scrollIntoView();
+    nav.classList.toggle("visible-nav")
+    nameTitle.classList.toggle("name-title-blur")
+    
+    })
+    
