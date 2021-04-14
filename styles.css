@@ -124,7 +124,7 @@ header {
 
 .name-title {
   text-align: center;
-  margin-top: 200px;
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -471,7 +471,7 @@ footer {
     display: inline;
     margin: 10px;
   }
-  #name-title {
+  .name-title {
     text-align: center;
     margin-top: 200px;
     display: flex;
@@ -573,6 +573,10 @@ footer {
 
 @media screen and (min-width: 1800px) {
   /* Project Section ------------------------*/
+
+  .name-title{
+    margin-top:250px;
+  }
 
   #projects {
     margin-top: 400px;
