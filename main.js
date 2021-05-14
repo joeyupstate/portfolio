@@ -14,6 +14,13 @@ const contactSection = document.getElementById("contact")
 const body = document.querySelector("body")
 
 
+const webLinks = document.querySelector(".web-links");
+const codeLinks = document.querySelector(".code-links")
+const connector = document.querySelector(".connector")
+const button = document.getElementById("web-site-icon-buttons")
+const button2 = document.getElementById("code-icon-buttons")
+
+
 
 
 
@@ -33,7 +40,12 @@ else if (screenWidth < 1200){
 
 
 //this calls the above function
-window.onresize = reSizer
+window.addEventListener("resize", function(){
+    reSizer()
+  
+})
+
+
 
 //This handles the opening of the mobile menu
 hamburgerButton.addEventListener("click", function(){
@@ -95,4 +107,22 @@ else {
 })
     
 
+
+//These call the menu to decide which website to see in the website section
+
+button.addEventListener("click", function(){
+  webLinks.classList.toggle("web-links-vis")
+  if(codeLinks.classList.contains("code-links-vis")){
+     codeLinks.classList.toggle("code-links-vis")
+  }
+  
+})
+button2.addEventListener("click", function(){
+
+ codeLinks.classList.toggle("code-links-vis")
+ if(webLinks.classList.contains("web-links-vis")){
+     webLinks.classList.toggle("web-links-vis")
+ }
+  
+})
 
